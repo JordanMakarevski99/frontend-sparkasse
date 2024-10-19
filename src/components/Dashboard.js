@@ -9,7 +9,7 @@ import arrow from '../assets/arrow.svg';
 import info from '../assets/info.svg';
 import badge_logged_in from '../assets/badge_logged_in.png'
 function Dashboard() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const cards = [
         { id: 1, lecturesTotal: 'Вкупно лекции', lecturesRemaining: 'Преостанати лекции', averageTime: '25 минути' },
         { id: 2, lecturesTotal: 'Вкупно лекции', lecturesRemaining: 'Преостанати лекции', averageTime: '30 минути' },
@@ -136,7 +136,7 @@ function Dashboard() {
                     <h1 className="text-3xl font-bold">Планирај ја твојата<br />патека на учење</h1>
                     <p className="mt-8">Определи го твоето време за учење и почни да<br />ја градиш твојата финансиска иднина со<br />твое темпо.</p>
                     <div>
-                        <button className="mt-8 flex bg-teal-600 w-1/2 text-white px-3 py-2 rounded">
+                        <button className="mt-8 flex bg-teal-600 w-2/3 text-white px-3 py-2 rounded">
                             Избери време <img className="ms-8 mt-1" src={arrow} />
                         </button>
                     </div>
@@ -165,7 +165,7 @@ function Dashboard() {
                     <h1 className="text-3xl font-bold">Штедомер</h1>
                     <p className="mt-16 pb-5">Штедомерот е алатка што пресметува заштеда<br />според приходи и трошоци и нуди совети за<br />постигнување финансиски цели.</p>
                     <div>
-                        <button className="mt-4 flex bg-purple-900 w-1/2 text-white px-3 py-2 rounded">
+                        <button className="mt-4 flex bg-purple-900 w-2/3 text-white px-3 py-2 rounded">
                             Избери време <img className="ms-8 mt-1" src={arrow} />
                         </button>
                     </div>
